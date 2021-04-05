@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<script>
+  function createAd(id) {
+    var ad = `<div class="flex-center"><div class="adsbyvli" data-ad-slot="${id}"></div></div>`
+    return ad
+  }
+
+  var els = document.querySelectorAll("pre");
+  var el = els[els.length - 1]
+  if (el) el.insertAdjacentHTML("afterEnd", createAd("vi_1398554771"));
+  document.querySelector(".site-content").insertAdjacentHTML("afterBegin", createAd("vi_1398554777"));
+  (vitag.Init = window.vitag.Init || []).push(function () { 
+    viAPItag.display("vi_1398554771");
+    viAPItag.display("vi_1398554777")
+  })
+</script>
+
+<script type="text/javascript" src="//services.vlitag.com/adv1/?q=2131a69c5cc0702cfc4f3c342f5e554e" defer="" async=""></script><script> var vitag = vitag || {};</script>
+
+
+<div class="flex-center side-ad">
+  <div class="adsbyvli" data-ad-slot="vi_1398554773"></div> <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1398554773") })</script>
+</div>
