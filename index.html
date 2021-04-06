@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: 'Encode Sans', sans-serif;
+    }
+
+    .c-content p,
+    li,
+    .c-post-card__excerpt {
+
+      font-family: 'Fira Sans', sans-serif;
+      font-size: 18px;
+    }
+
+    .c-post-card:hover .c-post-card__title {
+      background: linear-gradient(to right, #c31432 10%, #ddd 50%, #240b36 60%);
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      background-clip: text;
+      border: none;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      text-decoration: none;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 3s linear infinite;
+      display: inline-block;
+    }
+
+
+    @keyframes textclip {
+      to {
+        background-position: 200% center;
+      }
+    }
+
+
+    .c-post {
+      max-width: 840px;
+
+    }
+
+    .top-bar {
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 9999;
+      padding: 10px;
+      background: #8E2DE2;
+      /* fallback for old browsers */
+      background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+      /* Chrome 10-25, Safari 5.1-6 */
+      background: linear-gradient(to right, #4A00E0, #8E2DE2);
+      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      color: white;
+      text-align: center;
+      margin-top: 10px;
+      font-family: 'Encode Sans', sans-serif;
+    }
+
+
+    #hooligan {
+      display: none;
+    }
+
+    .c-logo__img {
+      max-width: 80px;
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+  function createAd(id) {
+    var ad = `<div class="flex-center"><div class="adsbyvli" data-ad-slot="${id}"></div></div>`
+    return ad
+  }
+
+  setTimeout(()=> {
+    var els = document.querySelectorAll("pre");
+    var el = els[els.length - 1]
+    if (el) el.insertAdjacentHTML("afterEnd", createAd("vi_1398554771"));
+    document.querySelector(".site-content").insertAdjacentHTML("afterBegin", createAd("vi_1398554777"));
+    (vitag.Init = window.vitag.Init || []).push(function () {
+      viAPItag.display("vi_1398554771");
+      viAPItag.display("vi_1398554777")
+    })
+
+  }, 3000)
+  
+</script>
+
+<script type="text/javascript" src="//services.vlitag.com/adv1/?q=2131a69c5cc0702cfc4f3c342f5e554e" defer=""
+  async=""></script>
+<script> var vitag = vitag || {};</script>
+
+
+<div class="flex-center side-ad">
+  <div class="adsbyvli" data-ad-slot="vi_1398554773"></div>
+  <script>(vitag.Init = window.vitag.Init || []).push(function () { viAPItag.display("vi_1398554773") })</script>
+</div>

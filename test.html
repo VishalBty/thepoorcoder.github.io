@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .side-ad {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 100001;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="side-ad">
+    <img src="https://i.pinimg.com/236x/03/41/4e/03414ef33fafdf38f10ae6f8d2dd101b--day-trading-warehouse.jpg">
+  </div>
+
+  <script>
+    function createAd(id) {
+      var ad = `<div class="flex-center"><div class="adsbyvli" data-ad-slot="${id}"></div></div>`
+      return ad
+    }
+  
+      $( document ).ready(function() {
+          setTimeout(()=> {
+      var els = document.querySelectorAll("pre");
+      var el = els[els.length - 1]
+      if (el) el.insertAdjacentHTML("afterEnd", createAd("vi_1398554771"));
+      document.querySelector(".site-content").insertAdjacentHTML("afterBegin", createAd("vi_1398554777"));
+      (vitag.Init = window.vitag.Init || []).push(function () {
+        viAPItag.display("vi_1398554771");
+        viAPItag.display("vi_1398554777");
+          if(window.outerWidth>=950){
+              viAPItag.display("vi_1398554773")
+          }
+        
+      })
+  
+    }, 5000)
+      });
+    
+    
+  </script>
+  
+</body>
+</html>

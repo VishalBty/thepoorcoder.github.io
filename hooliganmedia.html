@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #sidebar-left {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #sidebar-right {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div id="hooligan">
+    <div id="sidebar-left">
+
+      <!--div data-ad="thepoorcoder.com_fluid_sky_responsive_vertical_one" data-devices="m:1,t:1,d:1"  class="demand-supply"></div-->
+    </div>
+    <div id="sidebar-right">
+
+      <!--div data-ad="thepoorcoder.com_fluid_sky_responsive_vertical_two" data-devices="m:1,t:1,d:1"  class="demand-supply"></div-->
+    </div>
+  </div>
+  <script>
+    //Hooligan Media
+    var langs = ["python", "python3", "java8", "java", "cpp", "c", "ruby"]
+    var el = document.querySelector(".c-content");
+    for (lang of langs) {
+      el = document.getElementById("solution-in-" + lang) || el;
+    }
+
+    var hooligan = ''
+    if (el) el.insertAdjacentHTML("afterBegin", hooligan);
+  </script>
+
+  <script>
+    //Value impression
+    var els = document.querySelectorAll("pre");
+    var el = els[els.length - 1]
+    var hooligan = ``
+    //var hooligan = '<section><div data-ad="thepoorcoder.com_fluid_sq_responsive_square_two" data-devices="m:1,t:1,d:1"  class="demand-supply"></div></section>'
+    if (el) el.insertAdjacentHTML("afterEnd", hooligan);
+  </script>
+
+</body>
+
+</html>
